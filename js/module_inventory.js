@@ -9,13 +9,18 @@ var Inventory = (function()
         items = 
         [
             new Item(
-                "Food.js", 
-                "* Test item sentence.\n10 health restored.",
-                function(){Player.heal(10)}),
+                "派", 
+                '奶油糖果派',
+                "* 你吃掉了派.\n派的香味使你想起了托丽尔.* 你的HP回满了.",
+                function(){Player.heal(Player.getHPMax())}),
             new Item(
-                "Test.js", 
-                "* Test item sentence.",
-                function(){console.log("TEST!")}),
+                "脸排", 
+                '镁塔顿脸型的牛排',
+                function(){
+                    if(Player.getHPMax()-Player.getHPCur()<60)return"* 你吃掉了镁塔顿的脸……形状的牛排.\n收视率……啊没有呢.* 你回复了60HP."
+                    else return"* 你吃掉了镁塔顿的脸……形状的牛排.\n收视率……啊没有呢.* 你的HP回满了."
+                }(),
+                function(){Player.heal(60)}),
         ]
     }
     
@@ -25,7 +30,8 @@ var Inventory = (function()
         var names = [];
         for(var i = 0; i < items.length; i++)
         {
-            names.push(items[i].name);
+            if(seriousMode)names.push(items[i].seriousName);
+            else names.push(items[i].normName);
         }
         return names;
     }
@@ -47,6 +53,11 @@ var Inventory = (function()
     {
         items.splice(index, 1);
     }
+
+    function getItem(item)
+    {
+        items.push(item);
+    }
     
     //Activate an item at an index.
     function activate(index)
@@ -61,6 +72,7 @@ var Inventory = (function()
         getText : getText,
         getLength : getLength,
         removeItem : removeItem,
-        activate : activate
+        activate : activate,
+        getItem:getItem
     }
 }());
