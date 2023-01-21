@@ -10,8 +10,10 @@ var Cgroup = (function()
     {
         enemies = [
             new Cenemy(new Vect(185, 220, 0)),
-            new Cenemy2(new Vect(445, 220, 0))];
-        mercies = ["|#FF0Spare", "Flee"];
+            new Cenemy3(new Vect(300, 220, 0)),
+            new Cenemy2(new Vect(445, 220, 0)),
+            ];
+        mercies = ["饶恕", "你给路打油~"];
         defends = [new Cdefend()];
         
         //for(var i = 1; i <= 2; i ++)
@@ -22,7 +24,7 @@ var Cgroup = (function()
                 xhr.overrideMimeType("application/json");
                 xhr.onload = function()
                 {
-                    Cgroup.loadAnimation(0, xhr.responseText, new Vect(185, 170, 0));
+                    Cgroup.loadAnimation(0, xhr.responseText, new Vect(145, 170, 0));
                     //Cgroup.loadAnimation(1, xhr.responseText, new Vect(445, 170, 0));
                 }
                 xhr.open('GET', "assets/animation_asriel.json", true);
@@ -36,12 +38,25 @@ var Cgroup = (function()
                 xhr.onload = function()
                 {
                     //Cgroup.loadAnimation(0, xhr.responseText, new Vect(185, 170, 0));
-                    Cgroup.loadAnimation(1, xhr.responseText, new Vect(445, 170, 0));
+                    Cgroup.loadAnimation(1, xhr.responseText, new Vect(555, 170, 0));
                 }
                 //xhr.open('GET', "assets/animation_asriel.json", true);
                 xhr.open('GET', "assets/animation_mettaton.json", true);
                 xhr.send();
-            }())
+            }());
+            (function()
+            {
+                var xhr = new XMLHttpRequest();
+                xhr.overrideMimeType("application/json");
+                xhr.onload = function()
+                {
+                    //Cgroup.loadAnimation(0, xhr.responseText, new Vect(185, 170, 0));
+                    Cgroup.loadAnimation(2, xhr.responseText, new Vect(340, 170, 0));
+                }
+                //xhr.open('GET', "assets/animation_asriel.json", true);
+                xhr.open('GET', "assets/animation_napstablook.json", true);
+                xhr.send();
+            }());
         //}
     }
     

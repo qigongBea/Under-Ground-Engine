@@ -82,17 +82,15 @@ var Combat = (function()
                     {
                         menuState++;
                         if(menuState > MENU_STATE.MERCY)
-                            menuState = MENU_STATE.MERCY;
-                        else
-                            Sound.playSound("button", true);
+                            menuState = MENU_STATE.FIGHT;
+                        Sound.playSound("button", true);
                     }
                     if(myKeys.keydown[myKeys.KEYBOARD.KEY_LEFT])
                     {
                         menuState--;
                         if(menuState < MENU_STATE.FIGHT)
-                            menuState = MENU_STATE.FIGHT;
-                        else
-                            Sound.playSound("button", true);
+                            menuState = MENU_STATE.MERCY;
+                        Sound.playSound("button", true);
                     }
                     if(myKeys.keydown[myKeys.KEYBOARD.KEY_Z])
                     {

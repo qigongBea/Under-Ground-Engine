@@ -12,7 +12,9 @@ var Player = (function()
         weapon = {};
         armor = {};
         hpCur = 16+lv*4;
-        if(lv==20)hpMax = 20;
+        hpMax = 16+lv*4;
+        if(lv==20)hpMax = 99;
+        hpCur = hpMax;
     }
     
     //Getter for weapon
@@ -58,9 +60,10 @@ var Player = (function()
     {
         Sound.playSound("damage", true);
         hpCur -= value;
-        if(hpCur < 0)
+        if(hpCur <= 0)
         {
             hpCur = 0;
+            if(debugging){hpCur=hpMax;deaths++;}
             return true;
         }
         return false;        

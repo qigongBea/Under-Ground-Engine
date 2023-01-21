@@ -81,7 +81,8 @@ var Cattack = (function()
                         attackFades.push([hit, 0, 1]);  //Add a normal fade effect.
                     }
                     damage = Math.floor(damage);        //Damage to int.
-                    totalDamage += damage;              //Increment damage
+                    if(Combat.getSelectStateEnemy()==0)totalDamage += damage; 
+                    if(Combat.getSelectStateEnemy()==2)totalDamage += 0.5;             //Increment damage
                     attackBars.splice(0, 1);            //Remove the consumed attack bar.
                     
                     //Sfx for attack.
@@ -153,6 +154,7 @@ var Cattack = (function()
                 break;
             case ATTACK_STATE.DAMAGEMISS:
             case ATTACK_STATE.DAMAGE:
+                
                 //Move text.
                 healthTextVel += healthTextAcc * dt;
                 healthTextPos.y += healthTextVel * dt;

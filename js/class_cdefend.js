@@ -28,38 +28,53 @@ Cdefend.prototype.draw = function(ctx)
     ctx.strokeStyle = "#000";
     ctx.beginPath();
     ctx.rect(
-        150 + 75 * this.durationCounter,
-        265,
+        350,
+        0 + 140 * this.durationCounter,
         40,
         40);
     ctx.rect(
-        100 + 85 * this.durationCounter,
-        305,
+        240,
+        0 + 150 * this.durationCounter,
         40,
         40);
     ctx.rect(
-        200 + 70 * this.durationCounter,
-        345,
+        340,
+        0 + 110 * this.durationCounter,
         40,
         40);
     ctx.rect(
-        50 + 70 * this.durationCounter,
-        345,
+        260,
+        0 + 120 * this.durationCounter,
         40,
         40);
     ctx.rect(
-        50 + 70 * this.durationCounter,
-        305,
+        380,
+        0 + 225 * this.durationCounter,
         40,
         40);
     ctx.rect(
-        -36 + 70 * this.durationCounter,
-        305,
+        320,
+        0 + 180 * this.durationCounter,
         40,
         40);
     ctx.rect(
-        -36 + 70 * this.durationCounter,
-        265,
+        290,
+        0 + 200 * this.durationCounter,
+        40,
+        40);
+    ctx.rect(
+        480,
+        0 + 75 * this.durationCounter,
+        40,
+        40);
+    ctx.rect(
+        490,
+        0 + 100 * this.durationCounter,
+        40,
+        40);
+    ctx.rect(
+        180,
+        0 + 115 * this.durationCounter,
         40,
         40);
     ctx.fill();

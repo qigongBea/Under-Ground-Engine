@@ -42,6 +42,7 @@ var Soul = (function()
         duration = .4;
         speed = 130;
         Sound.playSound("flash", true);
+        Sound.playSound("bgm", true);
     }
     
     //Reset the soul.

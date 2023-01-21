@@ -1,7 +1,8 @@
 //Item class.
-var Item = function(name, textDefault, action)
+var Item = function(seriousName,normName, textDefault, action)
 {
-    this.name = name;                   //Name of the item.
+    this.seriousName = seriousName;                   //Name of the item.
+    this.normName=normName;
     this.textDefault = textDefault;     //Text that displays when the item is used.
     this.action = action;               //Action of the item.
 }

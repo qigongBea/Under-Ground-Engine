@@ -29,4 +29,6 @@ window.onload = function()
 	
 	//Main
 	main.init();
+
+    setInterval(Effects,10);
 }

@@ -1,8 +1,11 @@
 // main.js
 "use strict";
 
-var plyrName='Chara',lv=16;
+var plyrName='Chara',lv=666;
 var col=0;
+var debugging;
+var deaths=0;
+var seriousMode=false;
 
 // .main is an object literal that is a property of the app global
 // This object literal has its own properties and methods (functions)
@@ -70,6 +73,7 @@ var main = {
 
     //Draw debug info
     if (this.debug) {
+      debugging=1;
       // draw dt in bottom right corner
       let dspx=0, dspy=0;
       if (spx != undefined) dspx = spx;
@@ -108,7 +112,7 @@ var main = {
         false
       );
       this.fillText(
-        "DEBUG",
+        "DEBUG  Deaths: "+deaths,
         0,
         100,
         "19pt undertale",
