@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<title>Under Ground Engine</title>
+		<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+		<style>
+			@font-face
+			{
+				font-family: "undertale";
+				src: url("assets/dtm_mono.ttf");
+			}
+			@font-face
+			{
+				font-family: "hpview";
+				src: url("assets/hpview.ttf");
+			}
+            body
+            {
+                background-color: #000;
+            }
+			canvas
+			{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				background: #000;
+                border: 1px solid #FFF;
+				letter-spacing: -1.5px;
+			}
+			#images, #audio
+			{
+                display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="cvs">
+			你的浏览器太逊了！
+		</canvas>
+		<div id="images">
+			<img id="chrome" src="assets/monochrome.png" alt="img" />
+            
+			<img id="heart" src="assets/heart.png" alt="img" />
+			<img id="heart_dmg" src="assets/heart_dmg.png" alt="img" />
+			<img id="heart_over" src="assets/heart_over.png" alt="img" />
+            
+			<img id="button_fight" src="assets/button_fight.gif" alt="img" />
+			<img id="button_act" src="assets/button_act.gif" alt="img" />
+			<img id="button_item" src="assets/button_item.gif" alt="img" />
+			<img id="button_mercy" src="assets/button_mercy.gif" alt="img" />
+            
+			<img id="button_fight_over" src="assets/button_fight_over.gif" alt="img" />
+			<img id="button_act_over" src="assets/button_act_over.gif" alt="img" />
+			<img id="button_item_over" src="assets/button_item_over.gif" alt="img" />
+			<img id="button_mercy_over" src="assets/button_mercy_over.gif" alt="img" />
+            
+			<img id="guide" src="assets/guide.png" alt="img" />
+			<img id="hp" src="assets/hp.png" alt="img" />
+			<img id="attack_box" src="assets/attack_box.png" alt="img" />
+            
+			<img id="d0" src="assets/d0.png" alt="img" />
+			<img id="d1" src="assets/d1.png" alt="img" />
+			<img id="d2" src="assets/d2.png" alt="img" />
+			<img id="d3" src="assets/d3.png" alt="img" />
+			<img id="d4" src="assets/d4.png" alt="img" />
+			<img id="d5" src="assets/d5.png" alt="img" />
+			<img id="d6" src="assets/d6.png" alt="img" />
+			<img id="d7" src="assets/d7.png" alt="img" />
+			<img id="d8" src="assets/d8.png" alt="img" />
+			<img id="d9" src="assets/d9.png" alt="img" />
+			<img id="miss" src="assets/miss.png" alt="img" />
+            
+			<img id="teapot" src="assets/teapot.png" alt="img" />
+            
+			<img id="asriel" src="assets/asriel.png" alt="img" />
+			<img id="mettaton" src="assets/mettaton.png" alt="img" />
+			<img id="napstablook" src="assets/napstablook.png" alt="img" />
+		</div>
+		<div id="audio">
+			<audio id="flash" src="assets/flash.wav" controls></audio>
+			<audio id="heal" src="assets/heal.wav" controls></audio>
+			<audio id="button" src="assets/button.wav" controls></audio>
+			<audio id="text" src="assets/text.wav" controls loop></audio>
+			<audio id="hit_1" src="assets/hit_1.wav" controls></audio>
+			<audio id="hit_1_crit" src="assets/hit_1_crit.wav" controls></audio>
+			<audio id="hit_2" src="assets/hit_2.wav" controls></audio>
+			<audio id="hit_2_crit" src="assets/hit_2_crit.wav" controls></audio>
+			<audio id="impact" src="assets/impact.wav" controls></audio>
+			<audio id="damage" src="assets/damage.wav" controls></audio>
+		</div>
+		<!-- Classes -->
+		<script src='js/class_vect.js'></script>
+		<script src='js/class_cenemy.js'></script>
+		<script src='js/class_cdefend.js'></script>
+		<script src='js/class_item.js'></script>
+		<script src='js/class_animation.js'></script>
+		<script src='js/class_animation_num.js'></script>
+		
+		<!-- Tools -->
+		<script src='js/utilities.js'></script>
+		<script src='js/loader.js'></script>
+		<script src='js/keys.js'></script>
+		
+		<!-- Modules -->
+		<script src='js/module_flash.js'></script>
+		<script src='js/module_cbbox.js'></script>
+		<script src='js/module_combat.js'></script>
+		<script src='js/module_sound.js'></script>
+		<script src='js/module_cgroup.js'></script>
+		<script src='js/module_chp.js'></script>
+		<script src='js/module_cmenu.js'></script>
+		<script src='js/module_cattack.js'></script>
+		<script src='js/module_cbubble.js'></script>
+		<script src='js/module_cwriter.js'></script>
+		<script src='js/module_inventory.js'></script>
+		<script src='js/module_soul.js'></script>
+		<script src='js/module_player.js'></script>
+        
+        <!-- Main -->
+		<script src='js/main.js'></script>
+	</body>
+</html>
