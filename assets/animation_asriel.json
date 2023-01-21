@@ -1,0 +1,31 @@
+{
+    "image_id" : "asriel",
+    "length" : 3000,
+    "zindex" : 3,
+    "rotate" : [
+        {
+            "time" : 0,
+            "move" : 0
+        }
+    ],
+    "scale" : [
+        {
+            "time" : 0,
+            "move" : [2, 2]
+        },
+        {
+            "time" : 3000,
+            "move" : [2, 2]
+        }
+    ],
+    "translate" : [
+        {
+            "time" : 0,
+            "move" : [-30, -70]
+        },
+        {
+            "time":3000,
+            "move":[-30,-70]
+        }
+    ]
+}
