@@ -22,24 +22,46 @@
 			canvas
 			{
 				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				margin-top: 20px;
-				margin-bottom: 20px;
 				background: #000;
-                border: 1px solid #FFF;
 				letter-spacing: -1.5px;
+				margin-left: 0px;
+				margin-top: 0px;
 			}
 			#images, #audio
 			{
                 display: none;
 			}
+			#cvsdiv{
+				border: 0px solid #FFF;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				border-top: -90px;
+				margin-bottom: 20px;
+				width: 640px;
+				height: 480px;
+				overflow: hidden;
+			}
+			#bdr{
+				background-image: url(./assets/dog_frame.png);
+				background-size:contain;
+				width: 960px;
+				height: 540px;
+				margin: 0;
+				border: 0;
+				padding-top: 10px;
+			}
 		</style>
 	</head>
 	<body>
-		<canvas id="cvs">
-			你的浏览器太逊了！
-		</canvas>
+		<div id="bdr">
+			<div id="cvsdiv">
+				<canvas id="cvs">
+					你的浏览器太逊了！
+				</canvas>
+			</div>
+		</div>
 		<div id="images">
 			<img id="chrome" src="assets/monochrome.png" alt="img" />
             
@@ -90,6 +112,7 @@
 			<audio id="hit_2_crit" src="assets/hit_2_crit.wav" controls></audio>
 			<audio id="impact" src="assets/impact.wav" controls></audio>
 			<audio id="damage" src="assets/damage.wav" controls></audio>
+			<audio id="bgm" src="assets/bgm.mp3" controls></audio>
 		</div>
 		<!-- Classes -->
 		<script src='js/class_vect.js'></script>
@@ -103,6 +126,7 @@
 		<script src='js/utilities.js'></script>
 		<script src='js/loader.js'></script>
 		<script src='js/keys.js'></script>
+		<script src='js/effects.js'></script>
 		
 		<!-- Modules -->
 		<script src='js/module_flash.js'></script>
