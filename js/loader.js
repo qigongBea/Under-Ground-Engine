@@ -20,7 +20,7 @@ window.onload = function()
     Inventory.init();
     Soul.init();
     Cbbox.init();
-    Cwriter.init();
+    Writer.init();
     Cattack.init();
     Chp.init();
     Cmenu.init();

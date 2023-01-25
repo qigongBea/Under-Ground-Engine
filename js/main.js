@@ -91,7 +91,7 @@ var main = {
         "dt: " + (100 / (60 * dt)).toFixed(1),
         0,
         25,
-        "19pt undertale",
+        "19pt Determination Mono",
         "lightgreen",
         false
       );
@@ -99,7 +99,7 @@ var main = {
         "SoulX: " + dspx.toFixed(3),
         0,
         50,
-        "19pt undertale",
+        "19pt Determination Mono",
         "lightgreen",
         false
       );
@@ -107,7 +107,7 @@ var main = {
         "SoulY: " + dspy.toFixed(3),
         0,
         75,
-        "19pt undertale",
+        "19pt Determination Mono",
         "lightgreen",
         false
       );
@@ -115,7 +115,7 @@ var main = {
         "DEBUG  Deaths: "+deaths,
         0,
         100,
-        "19pt undertale",
+        "19pt Determination Mono",
         coll,
         false
       );

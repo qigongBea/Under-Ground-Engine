@@ -18,3 +18,4 @@ var Effects = function(){
     cvsEff.marginTop=cvsY+'px';
     cvsEff.transform='rotate('+deg+'deg)'
 }
+//Effects = function(){}
