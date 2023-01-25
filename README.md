@@ -19,7 +19,7 @@
 # 地底引擎 (zh-CN)
 -----
 ## 介绍
-#### 这是一个使用HTML，CSS和JavaScript制作的[传说之下](undertale.com)饭制游戏。
+#### 这是一个使用HTML，CSS和JavaScript制作的[传说之下](undertale.com)饭制游戏引擎。
 #### 这个项目由[Undertale.js](https://github.com/Alcom1/Undertale.js)再开发。
 #### 
 -----
