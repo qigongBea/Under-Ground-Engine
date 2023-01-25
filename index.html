@@ -7,13 +7,13 @@
 		<style>
 			@font-face
 			{
-				font-family: "undertale";
-				src: url("assets/dtm_mono.ttf");
+				font-family: "Determination Mono";
+				src: url("assets/fonts/dtm_mono.ttf");
 			}
 			@font-face
 			{
-				font-family: "hpview";
-				src: url("assets/hpview.ttf");
+				font-family: "Mars Needs Cunnilingus";
+				src: url("assets/fonts/mnc.ttf");
 			}
             body
             {
@@ -44,10 +44,10 @@
 				overflow: hidden;
 			}
 			#bdr{
-				background-image: url(./assets/dog_frame.png);
+				background-image: url(./assets/ui/frames/dog.png);
 				background-size:contain;
 				width: 960px;
-				height: 540px;
+				height: 530px;
 				margin: 0;
 				border: 0;
 				padding-top: 10px;
@@ -63,64 +63,60 @@
 			</div>
 		</div>
 		<div id="images">
-			<img id="chrome" src="assets/monochrome.png" alt="img" />
+			<img id="heart" src="assets/heart/heart.png" alt="img" />
+			<img id="heart_dmg" src="assets/heart/heart_dmg.png" alt="img" />
+			<img id="heart_over" src="assets/heart/heart_over.png" alt="img" />
             
-			<img id="heart" src="assets/heart.png" alt="img" />
-			<img id="heart_dmg" src="assets/heart_dmg.png" alt="img" />
-			<img id="heart_over" src="assets/heart_over.png" alt="img" />
-            
-			<img id="button_fight" src="assets/button_fight.gif" alt="img" />
-			<img id="button_act" src="assets/button_act.gif" alt="img" />
-			<img id="button_item" src="assets/button_item.gif" alt="img" />
-			<img id="button_mercy" src="assets/button_mercy.gif" alt="img" />
-            
-			<img id="button_fight_over" src="assets/button_fight_over.gif" alt="img" />
-			<img id="button_act_over" src="assets/button_act_over.gif" alt="img" />
-			<img id="button_item_over" src="assets/button_item_over.gif" alt="img" />
-			<img id="button_mercy_over" src="assets/button_mercy_over.gif" alt="img" />
+			<img id="button_fight" src="assets/ui/btns/button_fight.gif" alt="img" />
+			<img id="button_act" src="assets/ui/btns/button_act.gif" alt="img" />
+			<img id="button_item" src="assets/ui/btns/button_item.gif" alt="img" />
+			<img id="button_mercy" src="assets/ui/btns/button_mercy.gif" alt="img" />
+			<img id="button_fight_over" src="assets/ui/btns/button_fight_over.gif" alt="img" />
+			<img id="button_act_over" src="assets/ui/btns/button_act_over.gif" alt="img" />
+			<img id="button_item_over" src="assets/ui/btns/button_item_over.gif" alt="img" />
+			<img id="button_mercy_over" src="assets/ui/btns/button_mercy_over.gif" alt="img" />
             
 			<img id="guide" src="assets/guide.png" alt="img" />
-			<img id="hp" src="assets/hp.png" alt="img" />
-			<img id="attack_box" src="assets/attack_box.png" alt="img" />
+			<img id="hp" src="assets/ui/fig/hp.png" alt="img" />
+			<img id="attack_box" src="assets/ui/fig/attack_box.png" alt="img" />
             
-			<img id="d0" src="assets/d0.png" alt="img" />
-			<img id="d1" src="assets/d1.png" alt="img" />
-			<img id="d2" src="assets/d2.png" alt="img" />
-			<img id="d3" src="assets/d3.png" alt="img" />
-			<img id="d4" src="assets/d4.png" alt="img" />
-			<img id="d5" src="assets/d5.png" alt="img" />
-			<img id="d6" src="assets/d6.png" alt="img" />
-			<img id="d7" src="assets/d7.png" alt="img" />
-			<img id="d8" src="assets/d8.png" alt="img" />
-			<img id="d9" src="assets/d9.png" alt="img" />
-			<img id="miss" src="assets/miss.png" alt="img" />
+			<img id="d0" src="assets/ui/dnum/d0.png" alt="img" />
+			<img id="d1" src="assets/ui/dnum/d1.png" alt="img" />
+			<img id="d2" src="assets/ui/dnum/d2.png" alt="img" />
+			<img id="d3" src="assets/ui/dnum/d3.png" alt="img" />
+			<img id="d4" src="assets/ui/dnum/d4.png" alt="img" />
+			<img id="d5" src="assets/ui/dnum/d5.png" alt="img" />
+			<img id="d6" src="assets/ui/dnum/d6.png" alt="img" />
+			<img id="d7" src="assets/ui/dnum/d7.png" alt="img" />
+			<img id="d8" src="assets/ui/dnum/d8.png" alt="img" />
+			<img id="d9" src="assets/ui/dnum/d9.png" alt="img" />
+			<img id="miss" src="assets/ui/dnum/miss.png" alt="img" />
             
-			<img id="teapot" src="assets/teapot.png" alt="img" />
-            
-			<img id="asriel" src="assets/asriel.png" alt="img" />
-			<img id="mettaton" src="assets/mettaton.png" alt="img" />
-			<img id="napstablook" src="assets/napstablook.png" alt="img" />
+			<img id="asriel" src="assets/sprites/asriel.png" alt="img" />
+			<img id="mettaton" src="assets/sprites/mettaton.png" alt="img" />
+			<img id="napstablook" src="assets/sprites/napstablook.png" alt="img" />
 		</div>
 		<div id="audio">
-			<audio id="flash" src="assets/flash.wav" controls></audio>
-			<audio id="heal" src="assets/heal.wav" controls></audio>
-			<audio id="button" src="assets/button.wav" controls></audio>
-			<audio id="text" src="assets/text.wav" controls loop></audio>
-			<audio id="hit_1" src="assets/hit_1.wav" controls></audio>
-			<audio id="hit_1_crit" src="assets/hit_1_crit.wav" controls></audio>
-			<audio id="hit_2" src="assets/hit_2.wav" controls></audio>
-			<audio id="hit_2_crit" src="assets/hit_2_crit.wav" controls></audio>
-			<audio id="impact" src="assets/impact.wav" controls></audio>
-			<audio id="damage" src="assets/damage.wav" controls></audio>
-			<audio id="bgm" src="assets/bgm.mp3" controls></audio>
+			<audio id="flash" src="assets/snd/flash.wav" controls></audio>
+			<audio id="heal" src="assets/snd/heal.wav" controls></audio>
+			<audio id="button" src="assets/snd/button.wav" controls></audio>
+			<audio id="text" src="assets/snd/text.wav" controls loop></audio>
+			<audio id="hit_1" src="assets/snd/hit_1.wav" controls></audio>
+			<audio id="hit_1_crit" src="assets/snd/hit_1_crit.wav" controls></audio>
+			<audio id="hit_2" src="assets/snd/hit_2.wav" controls></audio>
+			<audio id="hit_2_crit" src="assets/snd/hit_2_crit.wav" controls></audio>
+			<audio id="impact" src="assets/snd/impact.wav" controls></audio>
+			<audio id="damage" src="assets/snd/damage.wav" controls></audio>
+			<audio id="bgm" src="assets/mus/bgm.mp3" controls></audio>
 		</div>
+
 		<!-- Classes -->
-		<script src='js/class_vect.js'></script>
-		<script src='js/class_cenemy.js'></script>
-		<script src='js/class_cdefend.js'></script>
-		<script src='js/class_item.js'></script>
-		<script src='js/class_animation.js'></script>
-		<script src='js/class_animation_num.js'></script>
+		<script src='js/classes/vect.js'></script>
+		<script src='js/classes/cenemy.js'></script>
+		<script src='js/classes/cdefend.js'></script>
+		<script src='js/classes/item.js'></script>
+		<script src='js/classes/animation.js'></script>
+		<script src='js/classes/animation_num.js'></script>
 		
 		<!-- Tools -->
 		<script src='js/utilities.js'></script>
@@ -129,19 +125,19 @@
 		<script src='js/effects.js'></script>
 		
 		<!-- Modules -->
-		<script src='js/module_flash.js'></script>
-		<script src='js/module_cbbox.js'></script>
-		<script src='js/module_combat.js'></script>
-		<script src='js/module_sound.js'></script>
-		<script src='js/module_cgroup.js'></script>
-		<script src='js/module_chp.js'></script>
-		<script src='js/module_cmenu.js'></script>
-		<script src='js/module_cattack.js'></script>
-		<script src='js/module_cbubble.js'></script>
-		<script src='js/module_cwriter.js'></script>
-		<script src='js/module_inventory.js'></script>
-		<script src='js/module_soul.js'></script>
-		<script src='js/module_player.js'></script>
+		<script src='js/modules/flash.js'></script>
+		<script src='js/modules/cbbox.js'></script>
+		<script src='js/modules/combat.js'></script>
+		<script src='js/modules/sound.js'></script>
+		<script src='js/modules/cgroup.js'></script>
+		<script src='js/modules/chp.js'></script>
+		<script src='js/modules/cmenu.js'></script>
+		<script src='js/modules/cattack.js'></script>
+		<script src='js/modules/cbubble.js'></script>
+		<script src='js/modules/Writer.js'></script>
+		<script src='js/modules/inventory.js'></script>
+		<script src='js/modules/soul.js'></script>
+		<script src='js/modules/player.js'></script>
         
         <!-- Main -->
 		<script src='js/main.js'></script>
